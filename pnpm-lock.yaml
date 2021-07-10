@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@types/react': ^17.0.14
+  '@types/react-helmet': ^6.1.2
   '@typescript-eslint/eslint-plugin': '>=4.0.1'
   eslint: '>=7.12.1'
   eslint-config-standard-jsx: ^10.0.0
@@ -13,6 +14,7 @@ specifiers:
   html-webpack-plugin: ^5.3.2
   react: ^17.0.2
   react-dom: ^17.0.2
+  react-helmet: ^6.1.0
   ts-loader: ^9.2.3
   typescript: ^4.3.5
   webpack: ^5.44.0
@@ -22,9 +24,11 @@ specifiers:
 dependencies:
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
+  react-helmet: 6.1.0_react@17.0.2
 
 devDependencies:
   '@types/react': 17.0.14
+  '@types/react-helmet': 6.1.2
   '@typescript-eslint/eslint-plugin': 4.28.2_eslint@7.30.0+typescript@4.3.5
   eslint: 7.30.0
   eslint-config-standard-jsx: 10.0.0_b222f4b85310192f6f041817740959cd
@@ -163,6 +167,12 @@ packages:
 
   /@types/prop-types/15.7.4:
     resolution: {integrity: sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==}
+    dev: true
+
+  /@types/react-helmet/6.1.2:
+    resolution: {integrity: sha512-dcfAZNlWb5JYFbO9CGfrPWLJAyFcT6UeR3u35eBbv8liY2Rg4K7fM1G5+HnwVgot+C+kVwXAZ8pLEn2jsMfTDg==}
+    dependencies:
+      '@types/react': 17.0.14
     dev: true
 
   /@types/react/17.0.14:
@@ -3383,7 +3393,6 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.13.1
-    dev: true
 
   /proxy-addr/2.0.7:
     resolution: {integrity: sha512-llQsMLSUDUPT44jdrU/O37qlnifitDP+ZwrmmZcoSKyLKvtZxpyV0n2/bD/N4tBAAZ/gJEdZU7KMraoK1+XYAg==}
@@ -3464,9 +3473,32 @@ packages:
       scheduler: 0.20.2
     dev: false
 
+  /react-fast-compare/3.2.0:
+    resolution: {integrity: sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==}
+    dev: false
+
+  /react-helmet/6.1.0_react@17.0.2:
+    resolution: {integrity: sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==}
+    peerDependencies:
+      react: '>=16.3.0'
+    dependencies:
+      object-assign: 4.1.1
+      prop-types: 15.7.2
+      react: 17.0.2
+      react-fast-compare: 3.2.0
+      react-side-effect: 2.1.1_react@17.0.2
+    dev: false
+
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
-    dev: true
+
+  /react-side-effect/2.1.1_react@17.0.2:
+    resolution: {integrity: sha512-2FoTQzRNTncBVtnzxFOk2mCpcfxQpenBMbk5kSVBg5UcPqV9fRbgY2zhb7GTWWOlpFmAxhClBDlIq8Rsubz1yQ==}
+    peerDependencies:
+      react: ^16.3.0 || ^17.0.0
+    dependencies:
+      react: 17.0.2
+    dev: false
 
   /react/17.0.2:
     resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
